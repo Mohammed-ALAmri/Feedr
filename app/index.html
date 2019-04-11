@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedr @ GA</title>
+    <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+</head>
+<body>
+
+
+
+  
+    <header>
+      <section class="container">
+        <a href="#" onclick="newsApi()"><h1>Feedr</h1></a>
+        <nav>
+          <ul>
+            <li><a href="#">News Source: <span id='source'></span></a>
+              <ul>
+                  <li><a href="#" onclick="newsApi()">News API</a></li>
+                  <li><a href="#" onclick="nyt()">The New York Times</a></li>
+              </ul>
+            </li>
+          </ul>
+          <section id="search">
+            <input type="text" name="name" value="">
+            <a href="#"><img src="images/search.png" alt="" /></a>
+          </section>
+        </nav>
+        <div class="clearfix"></div>
+      </section>
+    </header>
+
+    <div id="popUp" class="loader" hidden>
+      <a href="#" class="closePopUp" onclick="exit()">X</a>
+    </div>
+
+    <div id = "loaddiv" hidden>
+      <img id="load" src="https://my-lisa.com/inc/images/spinner.gif">
+    </div>
+
+    <section id="main" class="container">
+        <div id="srs1"></div>
+        <div id="srs2"></div>
+    </section>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
